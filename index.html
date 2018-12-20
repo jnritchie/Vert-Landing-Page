@@ -1,0 +1,238 @@
+<html>
+<head>
+<title>Justin's Dev | Landing/Coming Soon Page</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- CDN Theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700,900" rel="stylesheet">
+
+<style>
+
+body {
+	font-family: Montserrat;
+}
+
+h2, h3 {
+	text-align:center;
+}
+
+nav {
+	background:none;
+	position: absolute;
+	z-index: 2;
+	box-shadow:none;
+    padding: 0 3em;;
+}
+
+.brand-logo img {
+	max-width: 200px;
+	padding:20px;
+}
+
+.tagline span {
+	color:#fff;
+	font-size:2em;
+}
+
+.welcome {
+	position: relative;
+	color:#fff;
+	padding:0px;
+}
+
+.welcome h1 {
+	color:#f6ebc6;
+	margin-top:0px;
+	font-weight: 600;
+}
+
+
+.text-block {
+	text-align: left;
+	background-color: #18365d;
+	padding:3em 0;
+}
+
+.text-block-inner {
+	margin-top: 3em;
+	padding:8em 5em;
+}
+
+.img-block {
+	/*position: relative;*/
+	background-image: url('img/artist-cameras-web.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+/*.img-block:before {
+	content:"";
+	position: absolute;
+	width: 100%;
+	height:100%;
+	left:0;
+	top:0;
+	background-color: #484444bf;
+}*/
+
+.intro {
+	max-width: 800px;
+	font-size:1.5em;
+	margin:auto;
+}
+
+.callnow {
+	font-size:3em;
+	color:#f6ebc6;
+
+}
+
+.callnow span {
+	color:#fff;
+}
+
+.card {
+	min-height: 242px;
+	text-align: center;
+	background-color: #f9d68c;
+}
+
+.card-title {
+	text-align:center;
+	color:#015c6f;
+	font-weight: 500!important;
+}
+
+.card p {
+	color: #015c6f;
+}
+
+.page-footer {
+    background-color: #193c68;
+    position: fixed;
+    width:100%;
+    bottom: 0px;
+}
+
+.grey-text {
+    margin: 0px;
+}
+
+.phone {
+	font-size: 2em;
+	color:#f9d68c!important;
+}
+
+.page-footer {
+	padding-top:0px;
+}
+
+
+@media (max-width: 992px) {
+	
+	body {
+		background-color: #18365d;
+	}
+
+	nav {
+		display:none;
+	}
+
+	.welcome {
+    	height: auto!important;
+	}
+
+	.text-block {
+		text-align: center!important;
+	}
+
+	.text-block-inner {
+		padding:4em 1em;
+	}
+
+	.intro {
+		text-align: center;
+	}
+
+	.page-footer {
+		position: absolute;
+	}
+
+	.row {
+		margin-bottom:0px;
+	}
+
+	.img-block {
+		display:none!important;
+	}
+}
+
+
+</style>
+
+</head>
+<body>
+
+<nav>
+    <div class="nav-wrapper row">
+    	<div class="col s12">
+      	<a href="javascript:void();" class="brand-logo"><img src="img/logo.png" alt="Logo" style="display:none;">Logo</a>
+      		<ul id="nav-mobile" class="right hide-on-med-and-down">
+        		<li style="background-color:#193c68"><a href="tel:0000000000">800-000-0000</a></li>
+      		</ul>
+     	</div>
+    </div>
+</nav>
+
+<div id="welcome" class="container-fluid welcome">
+	<div class="row">
+		<div class="col l6 s12 text-block">
+			<div class="text-block-inner">
+				<h4>Company Name</h4>
+				<h1>Coming Soon</h1>
+				<p class="intro">Welcome to the Company Name! Our new website is underway, but in the meantime please feel free to get in touch.</p>
+				<br>
+				<a class="waves-effect waves-light btn-large" style="background-color: orange;" href="tel:000000000">Call Now</a>
+			</div>
+		</div>
+		<div class="col l6 s12 img-block">
+			
+		</div>
+	</div>
+</div>
+	
+<footer class="page-footer">
+	<div class="footer-copyright">
+    	<div class="container">
+        	<p class="text-center">Copyright © 2018. Company Name LLC. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<script>
+
+		$(document).ready(function() {
+			
+			if ($(window).width() < 660) {
+   				//do nothing
+			}
+			else {
+   				
+   				$(window).resize(function() {
+    				$(".img-block").height($(window).height() - 50 );
+    				$(".text-block").height($(window).height() - 50 );
+				});	
+
+				$(window).trigger('resize');
+			}
+
+		});
+
+	</script>
+</body>
+</html>
