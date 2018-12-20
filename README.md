@@ -4,12 +4,12 @@ Simple Landing Page featuring two vertical columns and fixed footer. Something I
 
 # Resources
 
-Bootstrap 3.3.7
-Materialize
+Bootstrap 3.3.7<br>
+Materialize<br>
 jQuery 2.2.4
 
-#To Come
+# To Come
 
-AJAX Mailchimp email capture
-Mailgun SMTP Form
-Gmap?
+AJAX Mailchimp email capture<br>
+Mailgun SMTP Form<br>
+Gmap? 
